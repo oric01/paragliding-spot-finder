@@ -13,6 +13,8 @@ class SpotsContainer extends Component {
   }
 }
 
-const mapStateToProps = state => {};
+const mapStateToProps = state => ({
+  spots: state.spots
+});
 
 export default connect(mapStateToProps)(SpotsContainer);
