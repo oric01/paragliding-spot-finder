@@ -13,7 +13,7 @@ function App() {
   );
 }
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById("app");
 ReactDOM.render(
   <Provider store={store}>
     <App />

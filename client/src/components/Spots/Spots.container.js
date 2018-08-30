@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 
 import * as spotActions from "../../store/spot/spot.actions.js";
 
+
+
 class SpotsContainer extends Component {
   componentWillMount() {
     this.props.dispatch(spotActions.fetch());
