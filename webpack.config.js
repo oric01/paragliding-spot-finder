@@ -23,7 +23,10 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'client/dist'),
         compress: false,
-        port: 9000
+        port: 9000,
+        proxy: {
+            '/api': 'http://localhost:9001'
+        }
     },
     plugins: [ 
         new HtmlWebpackPlugin({
